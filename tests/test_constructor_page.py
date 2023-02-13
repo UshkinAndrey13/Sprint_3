@@ -16,5 +16,5 @@ class TestBurgers:
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span').click()  # сперва в раздел "соусы"
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]/span').click()  # затем в раздел "булки"
         assert driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/ul[1]/a[2]/p').text == \
-               'Краторная булка N-200i'   # наименование булки
+               'Краторная булка N-200i'   # Наименование булки
 
