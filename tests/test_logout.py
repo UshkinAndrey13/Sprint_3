@@ -14,7 +14,7 @@ class TestBurgers:
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/button').click()  # кнопка Войти
 
         WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="root"]/div/main/section[2]\
-        /div/button')))  # кнопка Оформить заказ
+        /div/button')))  # кнопка оформить заказ
 
         driver.find_element(By.XPATH, '//*[@id="root"]/div/header/nav/a/p').click()  # переход в раздел Личный кабинет
 
