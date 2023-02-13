@@ -15,7 +15,7 @@ class TestBurgers:
         # поле Имя
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[1]/div/div/input').send_keys('Andrey')
 
-        # Поле "Email"
+        # Поле Email
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/div/input').send_keys(email)
 
         # Поле "Пароль"

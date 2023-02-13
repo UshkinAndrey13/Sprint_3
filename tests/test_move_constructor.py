@@ -16,7 +16,7 @@ class TestBurgers:
         driver.find_element(By.XPATH, '//*[@id="root"]/div/header/nav/ul/li[1]/a/p').click()   # кнопка Конструктор
 
         move = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="root"]/div/main\
-        /section[1]/div[2]/ul[1]/a[1]/p'))).text   # ожидание появления названия булки
+        /section[1]/div[2]/ul[1]/a[1]/p'))).text   # Ожидание появления названия булки
         assert move == 'Флюоресцентная булка R2-D3'
 
     def test_move_logo(self, driver):
