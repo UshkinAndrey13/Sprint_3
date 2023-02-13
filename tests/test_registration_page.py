@@ -12,7 +12,7 @@ class TestBurgers:
         driver.find_element(By.XPATH, '//*[@id="root"]/div/header/nav/a/p').click()  # Кнопка "Личный кабинет"
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/div/p[1]/a').click()  # Кнопка "Зарегистрироваться"
 
-        # Поле Имя
+        # поле Имя
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[1]/div/div/input').send_keys('Andrey')
 
         # Поле "Email"

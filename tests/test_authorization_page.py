@@ -49,7 +49,7 @@ class TestBurgers:
         assert driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button').text == 'Оформить заказ'
 
     def test_authorization_restore_pass(self, driver):
-        driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button').click()  # кнопка Личный кабинет
+        driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button').click()  # кнопка личный кабинет
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a').click()  # кнопка Восстановить пароль
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/div/p/a').click()  # кнопка Войти
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[1]/div/div/input').send_keys\

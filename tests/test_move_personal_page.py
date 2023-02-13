@@ -9,7 +9,7 @@ class TestBurgers:
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[1]/div/div/input').send_keys\
             ('ushkinandrey1997@ya.ru')   # поле Email
 
-        # поле пароль
+        # поле Пароль
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[2]/div/div/input').send_keys('123456')
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/button').click()   # кнопка Войти
         driver.find_element(By.XPATH, '//*[@id="root"]/div/header/nav/a/p').click()   # переход в Личный кабинет

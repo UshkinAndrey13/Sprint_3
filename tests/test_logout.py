@@ -19,7 +19,7 @@ class TestBurgers:
         driver.find_element(By.XPATH, '//*[@id="root"]/div/header/nav/a/p').click()  # переход в раздел Личный кабинет
 
         WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="root"]/div/main/div/nav/ul\
-        /li[3]/button')))  # ожидание кнопки Выход
+        /li[3]/button')))  # ожидание кнопки выход
 
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button').click()  # кнопка Выход
         logout = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="root"]/div/main\

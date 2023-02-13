@@ -10,7 +10,7 @@ class TestBurgers:
     def test_fillings(self, driver):
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span').click()  # в раздел "Начинки"
         assert driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/ul[3]/a[2]/p').text == \
-            'Говяжий метеорит (отбивная)'  # Наименование начинки
+            'Говяжий метеорит (отбивная)'  # наименование начинки
 
     def test_buns(self, driver):
         driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span').click()  # сперва в раздел "соусы"
